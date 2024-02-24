@@ -1,0 +1,84 @@
+.un-hero{
+    background-color: $color-light-black;
+    
+    &__container{
+        position: relative;
+        overflow: hidden;
+        align-items: center;
+        justify-content: space-between;
+       
+        img{
+            width: 600px;
+            height: auto;
+         
+        }
+    }
+
+    &__outer{
+        width: 40%;
+        padding: $spacer-3;
+
+        &_head{
+            font-size: 50px;
+            line-height: 56px;
+            color: $color-black;
+            font-weight: 700;
+            padding-bottom: $spacer-4;
+        }
+        &_content{
+            
+            font-size: 18px;
+            line-height: 24px;
+            color: $color-black;
+          
+        }
+    }
+
+    &__img-pos{
+        position: absolute;
+        right: 0;
+        bottom: 100px;
+        transform: translateX(0px);
+        transition: 1s;
+    }
+    .tab-pane.active{
+        .pf-hero__img-pos{
+            transition: 1s;
+            transition-delay: 1s;
+        }
+    }
+
+    .nav{
+        align-content: flex-end;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        .active{
+            filter: none;
+        }
+
+    }
+
+
+    .nav-item img{
+        width: 55px;
+        height: auto;
+        transition: ease-in-out 0.3s;
+        transform: scale(1.1);
+        filter: grayscale(100%);
+        
+
+        &:hover{
+            transform: scale(1.2);
+            transition: ease-in-out 0.3s;
+    
+            filter: none;
+            
+        }
+    }
+
+    
+
+    
+}
