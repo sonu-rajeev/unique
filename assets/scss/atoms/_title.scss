@@ -1,9 +1,15 @@
 .un-title{
-    width: 50%;
+    width: 40%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
 
     &__head{
         font-size: 40px;
         line-height: 50px;
+        letter-spacing: -1px;
         font-weight: 700;
         margin-bottom: 20px;
         color: $color-black;
@@ -18,9 +24,22 @@
     }
 
     &__sub{
-        font-size: 12px;
-        line-height: 20px;
-        font-weight: 500;
-        color: $color-black;
+        font-size: 10px;
+        line-height: 15px;
+        color: $color-light-black;
+    }
+}
+
+@include tablet{
+    .un-title{
+        height: auto;
+    }
+}
+
+@include mobile{
+    .un-title{
+        width: 100%;
+        height: 900px;
+        margin-left: 0px;
     }
 }

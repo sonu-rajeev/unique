@@ -1,0 +1,17 @@
+.un-mobile-app{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px;
+}
+
+@include tablet{
+    .un-mobile-app{
+        justify-content: space-around;
+    }
+}
+
+@include mobile{
+    .un-mobile-app{
+        flex-direction: column;
+    }
+}
