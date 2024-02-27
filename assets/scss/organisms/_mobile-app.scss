@@ -12,6 +12,6 @@
 
 @include mobile{
     .un-mobile-app{
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 }
