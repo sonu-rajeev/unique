@@ -8,7 +8,7 @@
         justify-content: space-between;
        
         img{
-            width: 600px;
+            width: 800px;
             height: auto;
          
         }
@@ -41,9 +41,10 @@
     }
 
     &__img-pos{
+
         position: absolute;
-        right: 0;
-        bottom: 100px;
+        right: -410px;
+        bottom: 0;
         transform: translateX(0px);
         transition: 1s;
     }
