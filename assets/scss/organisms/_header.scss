@@ -36,16 +36,6 @@
         padding: 0px;
     }
 
-    &__logo{
-        width: 50px;
-        height: auto;
-    }
-
-    .navbar-dark .navbar-brand{
-        color: $color-black;
-        font-weight: 600;
-    }
-
     .un-download-btn__btn-1{
         font-size: 14px;
         line-height: 17px;
@@ -68,5 +58,61 @@
         box-shadow: none;
         border-color: rgb(12, 12, 12);
     }
+
+    .navbar-toggler{
+        background-color: $color-black;
+        border: 1px solid $color-black;
+    }
+
+    .navbar>.container-fluid{
+        flex-wrap: wrap;
+    }
+
+
+    &__logo{
+        width: 40px;
+        height: auto;
+    }
+
+    &__txt{
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 600;
+    }
+
+    &__inner{
+        display: flex;
+        align-items: center;
+    }
     
+}
+
+@media (min-width: 600px){
+    .navbar-expand-lg .navbar-toggler{
+     display: none;   
+    }
+    .navbar-expand-lg .navbar-collapse{
+        display: flex !important;
+        flex-basis: auto;
+    }
+    .navbar-expand-lg .navbar-nav{
+        flex-direction: row;
+    }
+}
+
+@include tablet{
+    .un-header{
+        .navbar-expand-lg .navbar-nav .nav-link{
+            margin: 0px 10px;
+            padding: 0px;
+        }
+    }
+}
+
+@include mobile{
+    .un-header{
+        .un-download-btn{
+            margin-top: 10px;
+        }
+    }
 }
