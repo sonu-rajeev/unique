@@ -11,9 +11,12 @@
 @import "atoms/black-btn";
 @import "atoms/title";
 @import "atoms/mobile-icon";
+@import "atoms/counter";
+@import "atoms/tile-head";
 
 // molecule
 @import "molecules/hero";
+@import "molecules/tile";
 
 // organisms
 @import "organisms/mobile-app";
