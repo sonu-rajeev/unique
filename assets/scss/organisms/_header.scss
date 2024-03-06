@@ -41,4 +41,32 @@
         height: auto;
     }
 
+    .navbar-dark .navbar-brand{
+        color: $color-black;
+        font-weight: 600;
+    }
+
+    .un-download-btn__btn-1{
+        font-size: 14px;
+        line-height: 17px;
+        padding: 8px 20px;
+    }
+
+    .modal-header{
+        font-weight: 600;
+    }
+    .modal-dialog{
+        max-width: 400px;
+    }
+    .modal-content{
+        border-radius: 0.5rem;
+    }
+    .form-control{
+        font-size: 14px;
+    }
+    .form-control:focus{
+        box-shadow: none;
+        border-color: rgb(12, 12, 12);
+    }
+    
 }
