@@ -1,6 +1,54 @@
 .un-tile{
-    background-color: #f1f1f1;
+    background-color: $color-white;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
     border-radius: 10px;
+    transition: 0.3s ease-in-out;
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: calc(25% - 20px);
 
-    
+    &__wrap{
+        padding: 20px;
+    }
+
+    &:hover{
+        transform: translateY(-10px);
+        transition: 0.3s ease-in-out;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .un-download-btn{
+        padding-top: 20px;
+    }
+
+    .un-download-btn__btn-1{
+        font-size: 14px;
+        line-height: 17px;
+        padding: 8px 20px;
+    }
+
+    &__icon{
+        width: 20px;
+        height: 20px;
+    }
+
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@include tablet{
+    .un-tile{
+        width: calc(50% - 20px);
+        margin-bottom: 20px;
+    }
+}
+
+@include mobile{
+    .un-tile{
+        width: calc(100% - 20px);
+        margin-bottom: 20px;
+    }
 }
