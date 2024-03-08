@@ -1,3 +1,36 @@
+// slick
+$('.review').slick({
+      prevArrow: $('.un-review__prev'),
+      nextArrow: $('.un-review__next'),
+
+    centerMode: true,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 821,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          slidesToShow: 1
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerMode: false,
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
+
+
+
+
+// counter
 let valueDisplays = document.querySelectorAll(".un-counter__num");
 let interval = 4000;
 
