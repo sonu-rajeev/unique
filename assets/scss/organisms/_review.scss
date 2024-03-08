@@ -11,6 +11,10 @@
         .un-tile-h__head, .un-tile-h__sub{
             color: white;
         }
+
+        &:hover{
+            background: linear-gradient(to bottom right, #757785, #000000);
+        }
     }
 
     &__prev{ 
