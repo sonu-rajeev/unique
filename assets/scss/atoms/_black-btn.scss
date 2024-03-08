@@ -6,10 +6,9 @@
        font-size: 16px;
        line-height: 20px;
        color: $color-white;
-       background-color: $color-black;
-       border: 1px solid $color-black;
+       background: linear-gradient(to bottom right, #000000, #757785);
        border-radius: 30px;
-       transition: 0.3s ease-in-out;
+       transition: 0.5s ease-in-out;
        outline: none;
        padding: 10px 30px;
    
@@ -23,9 +22,8 @@
        
    
        &:hover{
-           transition: 0.3s ease-in-out;
-           color: $color-black;
-           background-color: $color-white;
+        transition: 0.5s ease-in-out;
+        background: linear-gradient(to bottom right, #757785, #000000);
    
        }
    

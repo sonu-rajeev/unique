@@ -2,14 +2,18 @@
 
     .nav{
         justify-content: center;
-        padding: 20px 0px;
+        flex-wrap: nowrap;
+        padding: 0px;
+        border: 2px solid $color-black;
+        width: 190px;
+        border-radius: 30px;
     }
     .nav-link{
         color: $color-black;
     }
     .nav-pills .nav-link{
         border-radius: 0;
-        border: 2px solid $color-black;
+        border: none;
         width: 95px;
     }
     .nav-pills .nav-link.active{
@@ -33,6 +37,12 @@
         }
     }
 
+    &__nav-wrap{
+        width: 100%;
+        display: inline-flex;
+        justify-content: center;
+    }
+
     .un-title{
         width: 100%;
         height: auto;
@@ -52,7 +62,6 @@
 @include tablet{
     .un-pricing{
         .nav{
-            padding: 10px 0px;
             margin-bottom: 10px !important;
         }
         .un-title__head{
@@ -64,7 +73,6 @@
 @include mobile{
     .un-pricing{
         .nav{
-            padding: 10px 0px;
             margin-bottom: 10px !important;
         }
         .un-title__head{
