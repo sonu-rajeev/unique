@@ -1,0 +1,27 @@
+.un-tab{
+    padding: $spacer-5 $spacer-0;
+
+    ul{
+        gap: 20px;
+    }
+
+    .nav{
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-pills .nav-link.active{
+        background-color: $color-black;
+    }
+    .nav-pills .nav-link{
+        background-color: $color-grey-1;
+        border-radius: 1.25rem;
+    }
+    .nav-link{
+        color: $color-black;
+        padding: $spacer-2 $spacer-4;
+    }
+    .fade{
+        transition: ease-in 0.4s;
+    }
+
+}

@@ -1,49 +1,70 @@
 .un-hero{
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+    justify-content: space-between;
     background-color: $color-light-black;
+
+    ul{
+        padding-top: $spacer-5;
+    }
+
+    .nav li{
+        width: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     
     &__container{
-        position: relative;
-        overflow: hidden;
-        align-items: center;
-        justify-content: space-between;
-       
-        img{
-            width: 800px;
-            height: auto;
-         
-        }
+        padding: 50px $spacer-0;
     }
+
 
     &__outer{
         width: 40%;
         padding: $spacer-3;
 
         &_head{
-            font-size: 50px;
-            line-height: 56px;
-            color: $color-black;
+            font-size: 55px;
+            line-height: 65px;
+
             font-weight: 700;
+            color: $color-black;
             padding-bottom: $spacer-4;
         }
         &_content{
             
-            font-size: 18px;
-            line-height: 24px;
+            font-size: 20px;
+            line-height: 30px;
             color: $color-black;
           
         }
     }
 
     &__icons{
-        width: 50px;
-        height: 50px;
+        width: 60px;
+        height: auto;
+        transition: 0.2s;
+        filter: grayscale(100%);
         cursor: pointer;
+
+        &:hover{
+            transform: translateY(-5px);
+            transition: ease-in 0.2s;
+            filter: none;
+        }
+
+        &--big{
+            width: 80px;
+
+        }
     }
 
     &__img-pos{
 
         position: absolute;
-        right: -410px;
+        right: -310px;
         bottom: 0;
         transform: translateX(0px);
         transition: 1s;
@@ -68,23 +89,13 @@
     }
 
 
-    .nav-item img{
-        width: 70px;
-        height: auto;
-        transition: ease-in-out 0.3s;
-        filter: grayscale(100%);
-        cursor: pointer;
+    
+
+       
         
 
-        &:hover{
-            transform: scale(1.1);
-            transition: ease-in-out 0.3s;
-            filter: none;
-            
-        }
+       
     }
 
     
-
     
-}
