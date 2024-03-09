@@ -1,0 +1,49 @@
+.un-car-tile{
+
+    &__big-outer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0 -15px;
+        padding: $spacer-4 $spacer-0;
+
+     
+    }
+    
+    
+    &__car-big{
+        width: calc(33.3% - 30px);
+        margin-left: 15px;
+        margin-right: 15px;
+        border-radius: 10px;
+        transition: 0.3s;
+
+        &--car-small{
+            width: calc(22% - 25px);
+            .un-car-tile__big-outer{
+                margin: 0;
+            }
+            
+        }
+
+        &:hover{
+            transform: scale(1.2);
+            transition: 0.3s;
+        }
+    }
+
+
+}
+
+@include mobile{
+    .un-car-tile{
+        &__car-big{
+            width: calc(100% - 30px);
+            margin-bottom: $spacer-3;
+        }
+        &__big-outer{
+            padding: 0;
+        }
+    }
+}
