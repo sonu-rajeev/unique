@@ -30,3 +30,9 @@
     }
 
 }
+
+@include mobile{
+    .un-tab .nav-link{
+        width: 150px;
+    }
+}

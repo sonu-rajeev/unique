@@ -20,7 +20,7 @@
         transition: 0.3s;
 
         &--car-small{
-            width: calc(22% - 25px);
+            width: calc(22% - 23px);
             .un-car-tile__big-outer{
                 margin: 0;
             }
@@ -44,6 +44,11 @@
         }
         &__big-outer{
             padding: 0;
+        }
+    }
+    .un-car-tile__car-big{
+        &:hover{
+            transform: none;
         }
     }
 }
