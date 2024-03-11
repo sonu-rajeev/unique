@@ -45,5 +45,13 @@
         &__big-outer{
             padding: 0;
         }
+
+
+        .un-car-tile__car-big &:hover{
+            transform: none;
+            transition: 0.3s;
+        }
+
+     
     }
 }
