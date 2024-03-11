@@ -62,6 +62,7 @@
 
 @include tablet{
     .un-pricing{
+        padding-bottom: 0px;
         .nav{
             margin-bottom: 10px !important;
         }
@@ -73,6 +74,9 @@
 
 @include mobile{
     .un-pricing{
+        padding-top: 280px;
+        padding-bottom: 0px;
+
         .nav{
             margin-bottom: 10px !important;
         }
