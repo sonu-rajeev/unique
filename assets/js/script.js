@@ -32,21 +32,33 @@ $('.review').slick({
   });
 
 
+// scroll-btn
+const toTop = document.querySelector(".un-scroll");
+
+window.addEventListener("scroll", () => {
+  if (window.pageYOffset  > 100) {
+    toTop.classList.add("active");
+  } else {
+    toTop.classList.remove("active");
+  }
+})
 
 
-// counter
-let valueDisplays = document.querySelectorAll(".un-counter__num");
-let interval = 4000;
 
-valueDisplays.forEach((valueDisplay) => {
-    let startValue = 0;
-    let endValue = parseInt(valueDisplay.getAttribute("data-val"));
-    let duration = Math.floor(interval / endValue);
-    let counter = setInterval(function () {
-        startValue += 1;
-        valueDisplay.textContent = startValue;
-        if (startValue == endValue) {
-            clearInterval(counter);
-        }
-    }, duration);
-});
+
+// // counter
+// let valueDisplays = document.querySelectorAll(".un-counter__num");
+// let interval = 4000;
+
+// valueDisplays.forEach((valueDisplay) => {
+//     let startValue = 0;
+//     let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+//     let duration = Math.floor(interval / endValue);
+//     let counter = setInterval(function () {
+//         startValue += 1;
+//         valueDisplay.textContent = startValue;
+//         if (startValue == endValue) {
+//             clearInterval(counter);
+//         }
+//     }, duration);
+// });
