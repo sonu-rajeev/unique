@@ -75,6 +75,7 @@
     &__logo{
         width: 40px;
         height: auto;
+        vertical-align: middle;
     }
 
     &__txt{
@@ -124,9 +125,11 @@
             margin: 2px 0px;
             padding: 0px;
         }
+        .navbar-toggler{
+            margin-bottom: 10px;
+        }
         &__inner{
             margin-bottom: 10px;
         }
-        
     }
 }
