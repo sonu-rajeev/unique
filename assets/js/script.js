@@ -32,7 +32,7 @@ $('.review').slick({
   });
 
 
-// scroll-btn
+// scroll-to-top
 const toTop = document.querySelector(".un-scroll");
 
 window.addEventListener("scroll", () => {

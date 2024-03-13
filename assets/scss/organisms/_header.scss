@@ -120,12 +120,12 @@
             margin-top: 15px;
             margin-left: 0px;
         }
-        .navbar-expand-lg .navbar-collapse{
-            margin: 10px 0px;
-        }
         .navbar-expand-lg .navbar-nav .nav-link{
             margin: 2px 0px;
             padding: 0px;
+        }
+        &__inner{
+            margin-bottom: 10px;
         }
         
     }
