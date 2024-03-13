@@ -17,13 +17,13 @@
 @import "atoms/tab-title";
 
 // molecule
-@import "molecules/hero";
 @import "molecules/tile";
 @import "molecules/rev-tile";
 @import "molecules/scroll-btn";
 
 // organisms
 @import "organisms/mobile-app";
+@import "organisms/hero";
 @import "organisms/header";
 @import "organisms/pricing";
 @import "organisms/review";
