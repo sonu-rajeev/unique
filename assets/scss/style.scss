@@ -14,12 +14,12 @@
 @import "atoms/counter";
 @import "atoms/tile-head";
 @import "atoms/car-tile";
+@import "atoms/tab-title";
 
 // molecule
 @import "molecules/hero";
 @import "molecules/tile";
 @import "molecules/rev-tile";
-@import "molecules/car-tab";
 @import "molecules/scroll-btn";
 
 // organisms
@@ -29,5 +29,6 @@
 @import "organisms/review";
 @import "organisms/drive";
 @import "organisms/footer";
+@import "organisms/car-tab";
 
 // pages
