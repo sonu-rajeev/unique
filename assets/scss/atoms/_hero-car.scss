@@ -1,0 +1,94 @@
+.un-hero-car{
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    padding: 60px $spacer-0;
+    
+
+    .un-title__head{
+        text-align: center;
+        color: $color-white;
+    }
+
+    &__cnt{
+        font-size: 18px;
+        line-height: 26px;
+        color: $color-grey;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    &__container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        span{
+            font-size: 220px;
+            line-height: 230px;
+            color: $color-white;
+            letter-spacing: 10px;
+            font-weight: 700;
+            opacity: 0.3;
+            transition: 0.3s;
+
+            &:hover{
+                opacity: 0.8;
+                transition: 0.3s;
+            }
+        }
+    }
+
+    &__img-outer{
+        display: flex;
+        justify-content: center;
+        margin-top: -70px;
+        position: relative;
+        z-index: 1;
+
+        img{
+            width: 85%;
+            height: auto;
+        }
+    }
+   
+}
+
+@include tablet{
+    .un-hero-car{
+        &__container span{
+            font-size: 130px;
+            line-height: 158px;
+
+            &:hover{
+                opacity: 0.3;
+            }
+        }
+    }
+}
+
+@include mobile{
+    .un-hero-car{
+        &__container span{
+            font-size: 60px;
+            line-height: 90px;
+
+            &:hover{
+                opacity: 0.3;
+            }
+        }
+
+        &__img-outer{
+            margin-top: -30px;
+        }
+   
+       &__cnt{
+           margin-bottom: 40px;
+       }
+    }
+
+   
+}
