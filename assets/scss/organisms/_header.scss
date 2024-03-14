@@ -1,5 +1,6 @@
 .un-header{
     width: 100%;
+    background-color: #090909;
 
     .navbar-expand-lg .navbar-collapse{
         justify-content: flex-end;
@@ -15,19 +16,18 @@
         }
     }
     .navbar-dark .navbar-nav .nav-link{
-        color: rgba(8, 8, 8, 0.75);
         font-weight: 600;
 
         &:hover{
-            color: $color-black;
+            color: $color-white;
         }
 
         &:focus{
-            color: $color-black;
+            color: $color-white;
         }
     }
     .bg-dark{
-        background-color: $color-white !important;
+        background-color: #090909 !important;
     }
 
     .navbar-expand-lg .navbar-nav .nav-link{
@@ -60,7 +60,10 @@
 
     .navbar-toggler{
         background-color: $color-black;
-        border: 1px solid $color-black;
+        border: 1px solid $color-white;
+    }
+    .navbar-toggler:focus{
+        box-shadow: none;
     }
 
     .navbar>.container-fluid{
@@ -82,11 +85,22 @@
         font-size: 16px;
         line-height: 20px;
         font-weight: 600;
+        color: $color-white;
     }
 
     &__inner{
         display: flex;
         align-items: center;
+    }
+
+    .un-download-btn__btn-1{
+        background: linear-gradient(to bottom right, #ffffff, #c1c1c4);
+        color: $color-black;
+        z-index: 1;
+
+        &:hover{
+            background: linear-gradient(to bottom right, #c1c1c4, #ffffff);
+        }
     }
     
 }
