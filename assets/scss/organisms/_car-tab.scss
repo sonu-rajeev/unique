@@ -31,10 +31,33 @@
         transition: ease-in 0.4s;
     }
 
+    .un-title__sub, .un-title__head, .un-title__cnt{
+        text-align: center;
+    }
+
+}
+
+@include tablet{
+    .un-tab{
+        .mt-5{
+            margin-top: 20px !important;
+        }
+    }
 }
 
 @include mobile{
-    .un-tab .nav-link{
-        width: 150px;
+    .un-tab{
+        br{
+            display: none;
+        }
+        .nav-link{
+            width: 150px;
+        }
+        .un-title__cnt{
+            margin-bottom: 0px;
+        }
+        .mt-5{
+            margin-top: 20px !important;
+        }
     }
 }
