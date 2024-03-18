@@ -99,16 +99,31 @@
             filter: none;
         }
 
-    }
+    } 
+  
+}
 
-
+@include mobile{
+    .un-hero{
+        &__icons{
+            width: 40px;
+            height: auto;
+            &--big{
+                width: 60px;
     
+            }
+        }
 
        
+        .nav{
+            gap: 10px;
+        }
         
-
-       
     }
+    .un-hero-car{
+        padding: $spacer-5 $spacer-0;
+    }
+}
 
     
     
