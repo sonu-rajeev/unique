@@ -1,12 +1,14 @@
 .un-hero-car{
 
-    padding: 60px $spacer-0;
+    padding-top: 60px;
     
 
     &__container{
         display: flex;
         justify-content: center;
         align-items: center;
+      
+
 
         span{
             font-size: 183px;
@@ -24,20 +26,26 @@
         }
     }
 
+
+
     &__img-outer{
         display: flex;
         justify-content: center;
         margin-top: -70px;
         position: relative;
         z-index: 1;
-
+        
         img{
             width: 85%;
             height: auto;
+            
+    
         }
     }
    
 }
+
+
 
 @include tablet{
     .un-hero-car{
