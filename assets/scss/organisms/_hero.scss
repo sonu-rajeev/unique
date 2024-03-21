@@ -1,9 +1,22 @@
 .un-hero{
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
     overflow: hidden;
     align-items: center;
     justify-content: space-between;
     background-color: $color-light-black;
+    padding: $spacer-5 $spacer-0;
+
+    .un-title__head, .un-title__cnt{
+        text-align: center;
+        color: $color-white;
+    }
+
+    
 
     ul{
         padding-top: $spacer-5;
@@ -86,16 +99,31 @@
             filter: none;
         }
 
-    }
+    } 
+  
+}
 
-
+@include mobile{
+    .un-hero{
+        &__icons{
+            width: 40px;
+            height: auto;
+            &--big{
+                width: 60px;
     
+            }
+        }
 
        
+        .nav{
+            gap: 10px;
+        }
         
-
-       
     }
+    .un-hero-car{
+        padding: $spacer-5 $spacer-0;
+    }
+}
 
     
     
