@@ -42,10 +42,7 @@
 
     }
 
-    // &__g-90{
-    //     width: 90% !important;
-    //     height: auto;
-    // }
+
    
 }
 
@@ -54,21 +51,25 @@
 @include tablet{
     .un-hero-car{
         &__container span{
-            font-size: 130px;
-            line-height: 158px;
+            font-size: 110px;
+            line-height: 140px;
 
             &:hover{
                 opacity: 0.3;
             }
         }
+        &__img-outer{
+            margin-top: -50px;
+        }
     }
+   
 }
 
 @include mobile{
     .un-hero-car{
         &__container span{
-            font-size: 60px;
-            line-height: 90px;
+            font-size: 40px;
+            line-height: 50px;
 
             &:hover{
                 opacity: 0.3;
@@ -76,11 +77,19 @@
         }
 
         &__img-outer{
-            margin-top: -30px;
+            margin-top: -20px;
+            img{
+                width: 100%;
+                height: auto;
+            }
         }
    
        &__cnt{
            margin-bottom: 40px;
+       }
+
+       &__unbreak{
+            display: none;
        }
     }
 
