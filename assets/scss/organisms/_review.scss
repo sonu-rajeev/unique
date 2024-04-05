@@ -27,7 +27,7 @@
         border-radius: 50%;
         outline: none;
         padding: 10px 15px;
-        margin-left: -40px;
+        margin-right: 10px;
         transition: 0.5s ease-in-out;
 
         &:hover{
@@ -46,7 +46,6 @@
         border-radius: 50%;
         outline: none;
         padding: 10px 15px;
-        margin-right: -40px;
         transition: 0.5s ease-in-out;
 
         &:hover{
@@ -57,9 +56,8 @@
 
     &__btn-wrap{
         display: flex;
-        justify-content: space-between;
-        top: -180px;
-        position: relative;
+        justify-content: flex-end;
+     
     }
 
     .un-title{
