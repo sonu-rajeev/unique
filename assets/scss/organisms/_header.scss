@@ -35,12 +35,6 @@
         padding: 0px;
     }
 
-    .un-download-btn__btn-1{
-        font-size: 14px;
-        line-height: 17px;
-        padding: 8px 20px;
-    }
-
     .modal-header{
         font-weight: 600;
     }
@@ -94,12 +88,17 @@
     }
 
     .un-download-btn__btn-1{
-        background: linear-gradient(to bottom right, #ffffff, #c1c1c4);
-        color: $color-black;
-        z-index: 1;
+        font-size: 14px;
+        line-height: 17px;
+        padding: 8px 20px;
 
-        &:hover{
-            background: linear-gradient(to bottom right, #c1c1c4, #ffffff);
+        &--wht{
+            background: linear-gradient(to bottom right, #ffffff, #c1c1c4);
+            color: $color-black;
+    
+            &:hover{
+                background: linear-gradient(to bottom right, #c1c1c4, #ffffff);
+            }
         }
     }
     

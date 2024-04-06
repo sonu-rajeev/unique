@@ -80,6 +80,10 @@
 @include tablet{
     .un-review{
         padding-top: 10px;
+
+        &__btn-wrap{
+            display: none;
+        }
     }
 }
 
