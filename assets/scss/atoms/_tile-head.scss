@@ -1,6 +1,7 @@
 .un-tile-h{
-    border-bottom: 1px solid $color-grey-1;
     padding: 20px;
+    display: flex;
+    justify-content: space-between;
 
     &__head{
         font-size: 25px;
@@ -24,6 +25,10 @@
             margin-bottom: 10px;
         }
     }
+
+    &__icon{
+        display: none;
+    }
 }
 
 .un-tile-rate{
@@ -31,4 +36,16 @@
     line-height: 40px;
     font-weight: 700;
     margin: 10px 0px;
+}
+
+
+@include mobile{
+    .un-tile-h{
+        &__icon{
+            display: block;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+        }
+    }
 }
