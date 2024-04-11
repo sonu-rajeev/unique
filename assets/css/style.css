@@ -399,8 +399,9 @@ button {
 }
 
 .un-tile-h {
-  border-bottom: 1px solid #dee2e6;
   padding: 20px;
+  display: flex;
+  justify-content: space-between;
 }
 .un-tile-h__head {
   font-size: 25px;
@@ -421,6 +422,19 @@ button {
 .un-tile-h__sub--1 {
   margin-bottom: 10px;
 }
+.un-tile-h__minus {
+  display: none;
+}
+.un-tile-h__add {
+  display: none;
+}
+.un-tile-h__pos {
+  position: relative;
+}
+.un-tile-h .up {
+  transform: rotate(-90deg);
+  transition: 0.1s ease-in-out;
+}
 
 .un-tile-rate {
   font-size: 35px;
@@ -429,6 +443,25 @@ button {
   margin: 10px 0px;
 }
 
+@media (max-width: 767px) {
+  .un-tile-h__minus {
+    display: block;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    position: absolute;
+    right: 10%;
+  }
+  .un-tile-h__add {
+    display: block;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    position: absolute;
+    right: 10%;
+    transition: 0.1s ease-in-out;
+  }
+}
 .un-car-tile__big-outer {
   display: flex;
   align-items: center;
@@ -559,6 +592,7 @@ button {
 }
 .un-tile__wrap {
   padding: 20px;
+  border-top: 1px solid #dee2e6;
 }
 .un-tile:hover {
   transform: translateY(-10px) !important;
@@ -581,6 +615,9 @@ button {
   display: flex;
   justify-content: space-between;
 }
+.un-tile .show {
+  display: block;
+}
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .un-tile {
@@ -592,6 +629,14 @@ button {
   .un-tile {
     width: calc(100% - 20px);
     margin-bottom: 20px;
+  }
+  .un-tile:hover {
+    transform: none !important;
+    transition: 0.3s ease-in-out !important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+  }
+  .un-tile__wrap {
+    display: none;
   }
 }
 .un-rev-tile {
@@ -1129,11 +1174,11 @@ button {
 }
 .un-footer {
   margin: 20px 0px;
-  padding: 40px 0px;
+  padding-top: 40px;
   text-align: center;
 }
 .un-footer__icons {
-  width: 30px;
+  width: 25px;
   height: auto;
   margin: 10px;
   transition: 0.3s ease-in-out;
@@ -1145,20 +1190,19 @@ button {
 .un-footer__inner {
   display: flex;
   justify-content: center;
-  margin-top: 10px;
 }
 .un-footer .un-title__cnt {
   color: rgba(8, 8, 8, 0.7490196078);
   font-weight: 600;
-  margin: 0px 20px;
+  margin: 0px 10px;
 }
 .un-footer .un-title__cnt:hover {
   color: #000000;
 }
 .un-footer .un-title__sub {
-  font-size: 16px;
-  line-height: 20px;
-  margin-top: 20px;
+  font-size: 12px;
+  line-height: 16px;
+  margin-top: 15px;
   font-weight: 500;
 }
 

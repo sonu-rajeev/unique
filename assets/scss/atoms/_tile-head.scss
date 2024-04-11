@@ -1,6 +1,7 @@
 .un-tile-h{
-    border-bottom: 1px solid $color-grey-1;
     padding: 20px;
+    display: flex;
+    justify-content: space-between;
 
     &__head{
         font-size: 25px;
@@ -24,6 +25,22 @@
             margin-bottom: 10px;
         }
     }
+
+    &__minus{
+        display: none;
+    }
+
+    &__add{
+        display: none;
+    }
+
+    &__pos{
+        position: relative;
+    }
+    .up{
+        transform: rotate(-90deg);
+        transition: 0.1s ease-in-out;
+    }
 }
 
 .un-tile-rate{
@@ -31,4 +48,28 @@
     line-height: 40px;
     font-weight: 700;
     margin: 10px 0px;
+}
+
+
+@include mobile{
+    .un-tile-h{
+        &__minus{
+            display: block;
+            width: 25px;
+            height: 25px;
+            cursor: pointer;
+            position: absolute;
+            right: 10%;
+        }
+
+        &__add{
+            display: block;
+            width: 25px;
+            height: 25px;
+            cursor: pointer;
+            position: absolute;
+            right: 10%;
+            transition: 0.1s ease-in-out;
+        }
+    }
 }
