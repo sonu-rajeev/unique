@@ -43,6 +43,30 @@ window.addEventListener("scroll", () => {
   }
 })
 
+// hero animation
+var letters = document.querySelectorAll(".tab-pane.fade.show.active .un-hero-car .un-hero-car__container p");
+
+
+for (var i = 0; i < letters.length; i++) {
+  (function(index) {
+    setTimeout(function() {
+      letters[index].classList.add("blink");
+      setTimeout(function() {
+        letters[index].classList.remove("blink");
+      }, 1000);
+    }, 1000 * i);
+  })(i);
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
