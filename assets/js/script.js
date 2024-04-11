@@ -46,13 +46,14 @@ window.addEventListener("scroll", () => {
 
 // hide/show
 
-const icons = document.querySelectorAll(".un-tile-h__icon");
+const icons = document.querySelectorAll(".un-tile-h__add");
 const tiles = document.querySelectorAll(".un-tile__wrap");
 
 if (icons) {
   icons.forEach((icon, i) => {
     icon.addEventListener("click", () => {
       tiles[i].classList.toggle("show");
+      icons[i].classList.toggle("up");
     });
   });
 }

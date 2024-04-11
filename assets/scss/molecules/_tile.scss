@@ -38,6 +38,9 @@
         display: flex;
         justify-content: space-between;
     }
+    .show{
+        display: block;
+    }
 }
 
 @include tablet{
@@ -62,8 +65,5 @@
             display: none;
         }
 
-        .show{
-            display: block;
-        }
     }
 }
