@@ -43,6 +43,7 @@ window.addEventListener("scroll", () => {
   }
 })
 
+
 // hero animation
 var letters = document.querySelectorAll(".tab-pane.fade.show.active .un-hero-car .un-hero-car__container p");
 
@@ -57,15 +58,6 @@ for (var i = 0; i < letters.length; i++) {
     }, 1000 * i);
   })(i);
 }
-
-
-
-
-
-
-
-
-
 
 
 // hide/show

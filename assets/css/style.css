@@ -1241,7 +1241,7 @@ button {
   padding: 8px 24px;
 }
 .un-tab .fade {
-  transition: ease-in 0.4s;
+  transition: ease-in 0.3s;
 }
 .un-tab .un-title__sub, .un-tab .un-title__head, .un-tab .un-title__cnt {
   text-align: center;
@@ -1325,6 +1325,11 @@ button {
 @media (max-width: 767px) {
   .un-gallery {
     display: block;
+  }
+  .un-gallery__caption {
+    opacity: 1;
+    padding: 10px;
+    font-size: 14px;
   }
   .un-gallery__column {
     width: 100%;

@@ -75,6 +75,12 @@
     .un-gallery{
         display: block;
 
+		&__caption{
+            opacity: 1;
+            padding: 10px;
+            font-size: 14px;
+        }
+
         &__column {
             width: 100%;
         }
