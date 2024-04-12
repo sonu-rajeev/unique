@@ -538,11 +538,11 @@ button {
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  .un-hero-car__container span {
+  .un-hero-car__container p {
     font-size: 110px;
     line-height: 140px;
   }
-  .un-hero-car__container span:hover {
+  .un-hero-car__container p:hover {
     opacity: 0.3;
   }
   .un-hero-car__img-outer {
@@ -550,11 +550,11 @@ button {
   }
 }
 @media (max-width: 767px) {
-  .un-hero-car__container span {
+  .un-hero-car__container p {
     font-size: 40px;
     line-height: 50px;
   }
-  .un-hero-car__container span:hover {
+  .un-hero-car__container p:hover {
     opacity: 0.3;
   }
   .un-hero-car__img-outer {

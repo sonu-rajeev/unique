@@ -44,7 +44,7 @@
 
 @include tablet{
     .un-hero-car{
-        &__container span{
+        &__container p{
             font-size: 110px;
             line-height: 140px;
 
@@ -61,7 +61,7 @@
 
 @include mobile{
     .un-hero-car{
-        &__container span{
+        &__container p{
             font-size: 40px;
             line-height: 50px;
 
