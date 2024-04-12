@@ -704,6 +704,11 @@ button {
   pointer-events: auto;
 }
 
+@media (max-width: 767px) {
+  .un-scroll {
+    display: none;
+  }
+}
 .un-mobile-app {
   display: flex;
   justify-content: center;
